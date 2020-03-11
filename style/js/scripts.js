@@ -1,5 +1,8 @@
 $(document).ready(function() {
     'use strict';
+    var d = new Date();
+    var n = d.getFullYear();
+    $(".current-year").text(n)
     /*-----------------------------------------------------------------------------------*/
     /*	STICKY HEADER
     /*-----------------------------------------------------------------------------------*/
@@ -1265,9 +1268,9 @@ $(document).ready(function() {
 			template: '<div class="item col-6 col-sm-4 col-md-2"><figure class="overlay overlay4 rounded"><a href="{{link}}" target="_blank"><img src="{{image}}" /><span class="bg"></span><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
 		});
 	}
-	if ($("#instafeed-widget-wedding").length > 0) {
-		$("#instafeed-widget-wedding").instastory({
-			get: '@weddingshots_',
+	if ($("#instafeed-widget").length > 0) {
+		$("#instafeed-widget").instastory({
+            get: '@pereira.atxfotografia',
 			imageSize: 240,
 			limit: 6,
 			template: '<div class="item col-6 col-md-6 col-lg-4"><figure class="overlay overlay4 rounded"><a href="{{link}}" target="_blank"><img src="{{image}}" /><span class="bg"></span><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
